@@ -1,0 +1,173 @@
+
+.log-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  top:150px;
+  width: 20%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+body {
+	text-align: center;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position:fixed;
+	top:0;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	color:#009879;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #fff;
+}
+.banner-area {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	top: 100px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url(https://i.postimg.cc/T3B3WFcv/2.jpg);
+	background-position: center center;
+}
+#123 {
+  	background-image: url(https://s27389.pcdn.co/wp-content/uploads/2020/06/bitcoin-cryptocurrencies-perfect-hedge-covid-19-crisis-1013x440.jpeg);
+}
+
+.banner-area h2 {
+	padding-top: 8%;
+	font-size: 70px;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+	color: #fff;
+	margin-top:0;
+}
+
+.descri {
+	font-family: 'Quicksand', sans-serif;
+	font-size:15px;
+	position:relative;
+}
+
+main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  top:150px;
+  width: 80%;
+}
+
+table {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width:100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius:5px 5px 0 0;
+    overflow:hidden;
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight:bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.name-port {
+	position:relative;
+	bottom:20px;
+}
+
+#news {
+  text-align: center;
+  border-radius:10px;
+  display: flex;
+  flex-wrap: wrap;
+  position:relative;
+}
+
+
+#news > div {
+  background-color: #EFE2BA;
+  color:white;
+  font-size: 15px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  width: 180px;
+  height:180px;
+  padding:10px;
+  border-radius:10px;
+}
+
+.sell-form {
+  width: 100%;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  border-radius:10px;
+}
+
+.quantity {
+    padding:6px 12px;
+    border-radius:10px;
+
+}

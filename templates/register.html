@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <link href="/static/form.css" rel="stylesheet">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+    
+    <title>Cr¥pto50: Register</title>
+    
+  </head>
+  <body style="background-image: url(https://i.postimg.cc/c4fNXFBQ/software-3682509-1920.jpg);text-align:center">
+    <form action="/register"  class="box" method="post">
+      <h1>Cr¥pto50</h1>
+      <h2>REGISTER</h2>
+      {{error}}
+        <div class="form-group">
+            <input autocomplete="off" autofocus  name="username" placeholder="Username" type="text">
+        </div>
+        <div class="form-group">
+            <input name="password" placeholder="Password" type="password">
+            <input  name="confirmation" placeholder="Confirm your password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+        <a href="/login" class="btn btn-primary">Log-in</a>
+    </form>
+  </main>
+
+  </body>
+  
+</html>  

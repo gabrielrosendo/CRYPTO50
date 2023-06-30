@@ -1,2 +1,53 @@
-# CS50
-Final project 
+# CS50 Final Project - CRYPTO50
+#### Video Demo:  <https://www.youtube.com/watch?v=5bgLvp2HXPk>
+#### Description:
+The project is a webpage where teachers can create assignments for students. The implementation is fairly simple, to keep the project scope in check.
+I wanted to make a project like this to expand my knowledge of Node JS and of techniques like buffer piping from database to client, role based authentications, etc.
+
+Technologies used:
+
+- Python
+- Flask
+- HTML
+- CSS
+- JQUERY
+- Bootstrap
+
+## How does the webpage work?
+
+To begin using, the user must create or login to an account. In this account, every user will start with $10.000, and they can use this money to buy different cryptocurrencies and
+simulate investing in cryptocurrencies without actually having to spend any money. In the homepage the website provides to the user all tha latest information about the cryptos they currently have,
+such as the current value and the change in the last 24 hours. Besides that, the homepage also shows boxes with all the latest important news and articles about cryptocurrencies, by clicking on the box,
+the user is taken to a link in which they can read the article. The user can also sell their cryptos and read more about by going to the "Understand Crypto" page.
+
+### Database
+
+Database stores all users, hashed passwords, cash the users have, what cryptocurrencies the user has and information about every one of them.
+
+### Sessions
+
+The webpage uses sessions to confirm that user is registered. Once the user tries to logins, his password is hashed and checked. Once everything passes a session is created and stored.
+The server attaches user to subsequent requests, so the back-end can easily access the details in the database for each user.
+
+## Files
+
+Static and templates files contain the CSS and HTML code, respectively. I used some bootstrap for the stylying and followed some tutorials online. 
+Application.py contain the python code for the application and apy.py contains someextra functions that are used in application.py. 
+These functions are the ones that read the API information and output the desired information. 
+Crypto.db contains the database, which is divided in users, containing info about the user, and portfolio, that contains info about which users hold which cryptocurrencies and also a lot of information about the cryptocurrencies.
+
+## How to launch application
+
+To run the web application use this command on the terminal:
+
+$ flask run
+
+## Possible improvements
+
+As all applications this one can also be improved. Possible improvements that I might add once I get more fammiliar with programming:
+
+- Add the possibility to add and withdraw cash.
+- Ability to change account details
+- Homepage shows graphic of the most important crypto in the last 7 days.
+- Have a way for users to send their suggestions and problems via chat.
+- Register with email and notificaitons to email about new prices and essential information about account.

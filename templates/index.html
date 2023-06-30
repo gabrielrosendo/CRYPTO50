@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <h1 class="name-port">Your Portfolio</h1>
+    <table class="content-table">
+        <thead> 
+            <tr class="heading">
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Purchase Price</th>
+                <th>Total Purchase Price</th>
+                <th>Quantity</th>
+                <th>Current price</th>
+                <th>Current Total Price</th>
+                <th>Change(24 hours)</th>
+                <th>  &emsp;  &emsp; Sell</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            {% for symbol in data %}
+            <tr>
+                <td>{{symbol.name}}</td>
+                <td>{{symbol.symbol}}</td>
+                <td>${{symbol.price}}</td>
+                <td>${{symbol.total}}</td>
+                <td>{{symbol.quantity}}</td>
+                <td>{{symbol.price_now}}</td>
+                <td>{{symbol.total_now}}</td>
+                {% if symbol.change_24 < 0 %}
+                   <td style="color:red;">{{symbol.change_24}}%</td>
+                {% else %}   
+                   <td style="color:green;">{{symbol.change_24}}%</div>
+                {% endif %}
+                <td><a type="button" value = {{symbol.symbol}} href="/sell?q={{symbol.symbol}}"class="btn btn-success">Sell {{symbol.symbol}}</a></td>
+        {% endfor %}
+            </tr>
+        
+        </tbody>
+        
+    </table>
+    
+    <h1>Latest Crypto News and Articles</h1>
+    <div id="news">
+        {% for title in titles%}
+        <div>
+       <a type="button" href={{titles[title]}}> <p>{{title}}</p> </a> {{today}}
+       </div>
+        {% endfor %}
+    </div>    
+        
+        {% endblock %}
+
+{% block banner %}
+<div class="banner-area" style="background-image: url(https://s27389.pcdn.co/wp-content/uploads/2020/06/bitcoin-cryptocurrencies-perfect-hedge-covid-19-crisis-1013x440.jpeg)"; >
+ <h2> &emsp; &emsp; &emsp; &emsp;Welcome</h2>
+</div>
+{% endblock %}
+
+

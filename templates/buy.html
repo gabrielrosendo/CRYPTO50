@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy Crypto
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('buy') }}" method="post">
+        <div>
+            <h2>Cash available: {{cash}}</h2>
+        </div>
+        <h3 style="color:red;">{{ error}} </h3> 
+        <div>
+        <div>
+          <input type="text" class="buy" name="symbol" autocomplete=off placeholder="Crypto Symbol (ex: BTC)">
+          </div>
+          <div>
+          <input type="number" min="0" step=".01" autocomplete="off" class="buy" name="quantity" placeholder="Quantity">
+          </div>
+        </div>
+        <div>
+        <button style = "background-color:#009879;" class="btn btn-success" type="submit">Buy</button>
+        </div>
+    </form>    
+{% endblock %}
