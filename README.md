@@ -2,8 +2,7 @@
 #### Video Demo:  <https://www.youtube.com/watch?v=5bgLvp2HXPk>
 ### Completed in September/2021
 #### Description:
-The project is a webpage where teachers can create assignments for students. The implementation is fairly simple, to keep the project scope in check.
-I wanted to make a project like this to expand my knowledge of Node JS and of techniques like buffer piping from database to client, role based authentications, etc.
+CRYPTO50 is a web application developed as the final project for CS50. It allows users to simulate investing in cryptocurrencies without actually having to spend any money. Users can create or login to an account, and they will start with $10,000 to buy different cryptocurrencies.
 
 Technologies used:
 
@@ -12,7 +11,6 @@ Technologies used:
 - HTML
 - CSS
 - JQUERY
-- Bootstrap
 
 ## How does the webpage work?
 
