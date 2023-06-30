@@ -1,5 +1,6 @@
 # CS50 Final Project - CRYPTO50
 #### Video Demo:  <https://www.youtube.com/watch?v=5bgLvp2HXPk>
+### Completed in September/2021
 #### Description:
 The project is a webpage where teachers can create assignments for students. The implementation is fairly simple, to keep the project scope in check.
 I wanted to make a project like this to expand my knowledge of Node JS and of techniques like buffer piping from database to client, role based authentications, etc.
