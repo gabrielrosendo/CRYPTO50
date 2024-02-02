@@ -13,6 +13,7 @@ Technologies used:
 - Python
 - Flask
 - HTML
+- SQLite
 - CSS
 - JQUERY
 
