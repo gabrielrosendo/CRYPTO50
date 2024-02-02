@@ -1,4 +1,8 @@
 # CS50 Final Project - CRYPTO50
+
+![Blue Doodle Mind Map Timeline Brainstorm](https://github.com/gabrielrosendo/CRYPTO50/assets/71938938/2843786d-e95b-4a37-b772-74f292992722)
+
+
 #### Video Demo:  <https://www.youtube.com/watch?v=5bgLvp2HXPk>
 ### Completed in September/2021
 #### Description:
